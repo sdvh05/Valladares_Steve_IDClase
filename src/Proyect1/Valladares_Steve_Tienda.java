@@ -197,7 +197,7 @@ public class Valladares_Steve_Tienda {
                }
                             if(LlevarDeTodosModos.equals("SI")){
                                 CantidadProducto=StockAzucar;
-                                StockAzucar=0;
+                                
                             }else if(LlevarDeTodosModos.equals("No")){
                                  SePuedeComprar=false;
                                 CantidadProducto=0;
@@ -223,7 +223,7 @@ public class Valladares_Steve_Tienda {
                }
                             if(LlevarDeTodosModos.equals("SI")){
                                 CantidadProducto=StockAvena;
-                                StockAvena=0;
+                             
                             }else if(LlevarDeTodosModos.equals("No")){
                                  SePuedeComprar=false;
                                 CantidadProducto=0;
@@ -249,7 +249,7 @@ public class Valladares_Steve_Tienda {
                }
                             if(LlevarDeTodosModos.equals("SI")){
                                 CantidadProducto=StockTrigo;
-                                StockTrigo=0;
+                                
                             }else if(LlevarDeTodosModos.equals("No")){
                                 SePuedeComprar=false;
                                 CantidadProducto=0;
@@ -274,9 +274,10 @@ public class Valladares_Steve_Tienda {
                         System.out.println("Porfavor Ingrese una opcion valida, (Si, o No)");
                         LlevarDeTodosModos=lea.next().toUpperCase();
                }
+ 
                             if(LlevarDeTodosModos.equals("SI")){
                                 CantidadProducto=StockMaiz;
-                                StockMaiz=0;
+                         
                             }else if(LlevarDeTodosModos.equals("No")){
                                 SePuedeComprar=false;
                                 CantidadProducto=0;
