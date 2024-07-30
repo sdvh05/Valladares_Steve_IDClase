@@ -39,7 +39,7 @@ public class Valladares_Steve_Tienda {
         System.out.println("|Docente: Ing. Erick Amaya                             |");
         System.out.println("|Clase: Programacion I (CCC104)                        |");
         System.out.println("|Seccion: 106 (2:40pm)                                 |");
-        System.out.println("|Fecha de Entrega: Semana:5 | 13/8/2024                |");
+        System.out.println("|Fecha de Entrega: Semana: 5 | 13/8/2024               |");
         System.out.println("|------------------------------------------------------|");
         
         do{
@@ -70,7 +70,19 @@ public class Valladares_Steve_Tienda {
                   DineroCaja=lea.nextInt();
               } 
                if(EstadoDeCaja.equals("Cerrado")){
-                   //Si esta cerrado es el dinero restante de lo que le sobro despues de hacer el deposito
+
+                   System.out.println("*La Caja se Ha Abierto*");
+                   System.out.println("");
+                   System.out.println("-----------------------------");
+                   System.out.println("Dinero en Caja: "+DineroCaja+" Lps.");
+                   System.out.println("");
+                   System.out.println("Inventario Restante:");
+                   System.out.println("Azucar: "+StockAzucar+" kg");
+                   System.out.println("Avena: "+StockAvena+" kg");
+                   System.out.println("Trigo: "+StockTrigo+" kg");
+                   System.out.println("Maiz: "+StockMaiz+" kg");
+                   System.out.println("-----------------------------");
+                   
                    
               } 
                
@@ -285,15 +297,19 @@ public class Valladares_Steve_Tienda {
                    if(ProductoVenta==1){ 
                    CantidadAzucar+=CantidadProducto;
                    VentasAzucar++;
+                   StockAzucar-=CantidadProducto;
                }else if(ProductoVenta==2){
                    CantidadAvena+=CantidadProducto;
                    VentasAvena++;
+                   StockAvena-=CantidadProducto;
                }else if(ProductoVenta==3){
                    CantidadTrigo+=CantidadProducto;
                    VentasTrigo++;
+                   StockTrigo-=CantidadProducto;
                }else if(ProductoVenta==4){
                    CantidadMaiz+=CantidadProducto;
                    VentasMaiz++;
+                   StockMaiz-=CantidadProducto;
                }
              }
                
@@ -548,7 +564,7 @@ public class Valladares_Steve_Tienda {
                 System.out.println("---------------");
                 System.out.println("MAYORES TOTALES");
                 System.out.println("---------------");
-                System.out.println("  La venta con Mayor Ganancia recaudo: "+VentaMasAlta+" Lps.");
+                System.out.println("  La venta que Mayor Ganancia recaudo "+VentaMasAlta+" Lps.");
                 System.out.println("  La compra con Mayor dinero invertido fue de: "+CompraMasAlta+" Lps.");
                 
                 System.out.println("");
