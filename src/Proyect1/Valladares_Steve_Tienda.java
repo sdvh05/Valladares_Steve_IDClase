@@ -523,39 +523,50 @@ public class Valladares_Steve_Tienda {
              
              
              
-       
-                System.out.println("REPORTES");
-                
+                System.out.println("-------------------------------------------------------------");
+                System.out.println("                  ***REPORTES***");
+                System.out.println("------");
                 System.out.println("DINERO");
-                System.out.println("Dinero Actual en Caja: "+DineroCaja+" Lps.");
-                System.out.println("DineroAlmacenado en el Banco: "+DineroBanco+" Lps.");
+                System.out.println("------");
+                System.out.println("  Dinero Actual en Caja: "+DineroCaja+" Lps.");
+                System.out.println("  Dinero Almacenado en el Banco: "+DineroBanco+" Lps.");
                 
                 System.out.println("");
                 
-                
+                System.out.println("--------------------------");
                 System.out.println("COMPRAS Y VENTAS EN EL DIA");
+                System.out.println("--------------------------");
                 
                 System.out.println("");
                 
+                System.out.println("------------------------------");
                 System.out.println("VOLUMEN TOTAL COMPRAS & VENTAS");
+                System.out.println("------------------------------");
                 
                 System.out.println("");
                 
+                System.out.println("---------------");
                 System.out.println("MAYORES TOTALES");
-                System.out.println("La venta con Mayor Ganancia recaudo: "+VentaMasAlta+" Lps.");
-                System.out.println("La compra con Mayor dinero invertido fue de: "+CompraMasAlta+" Lps.");
+                System.out.println("---------------");
+                System.out.println("  La venta con Mayor Ganancia recaudo: "+VentaMasAlta+" Lps.");
+                System.out.println("  La compra con Mayor dinero invertido fue de: "+CompraMasAlta+" Lps.");
                 
                 System.out.println("");
                 
+                System.out.println("-----------------");
                 System.out.println("PRODUCTO ESTRELLA"); 
-                System.out.println("El Producto Estrella fue: "+ProductoEstrella);
-                System.out.println("Con: "+CantidadEstrella+" ventas realizadas en el dia.");
+                System.out.println("-----------------");
+                System.out.println("  El Producto Estrella fue: "+ProductoEstrella);
+                System.out.println("  Con: "+CantidadEstrella+" ventas realizadas en el dia.");
                 
                 System.out.println("");
                 
+                System.out.println("-------");
                 System.out.println("RANKING");
+                System.out.println("--------");
                 
-                System.out.println("");
+                System.out.println("-------------------------------------------------------------");
+                
             
         }
          
