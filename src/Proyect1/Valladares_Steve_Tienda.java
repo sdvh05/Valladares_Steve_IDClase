@@ -603,7 +603,7 @@ public class Valladares_Steve_Tienda {
             double DepositoBanco=0;
              NumeroDeCompras=0; NumeroDeVentas=0; TotalVentas=0; TotalCompras=0; //Reioniciar Variables de Reportes
              VentasAzucar=0; VentasAvena=0; VentasTrigo=0; VentasMaiz=0;
-             VentaMasAlta=0; CompraMasAlta=0;
+             VentaMasAlta=0; CompraMasAlta=0; 
         
              System.out.println("Se posee: "+DineroCaja+" Lps. en caja");
              System.out.println("Se posee: "+DineroBanco+" Lps. en el Banco");
@@ -615,7 +615,8 @@ public class Valladares_Steve_Tienda {
                   System.out.println("Ingrese una Cantidad permitida para depositar en el Banco");
                  DepositoBanco=lea.nextDouble();
              }
-            DineroBanco+=DepositoBanco; 
+            DineroBanco+=DepositoBanco; //Sumar el deposito al registro del banco
+            DineroCaja-=DepositoBanco; //Restar el deposito al dinero de la caja
              
              
              System.out.println("Se Ha Cerrado la Caja");
