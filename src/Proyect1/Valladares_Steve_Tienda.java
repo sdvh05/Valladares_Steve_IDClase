@@ -27,7 +27,7 @@ public class Valladares_Steve_Tienda {
        
 // En reportes, B y C, B es solo cuantas veces se ingreso al Menu?, c? explicacion de la diferencia entre ambas
    
-       
+
         
         
         //Tipo Portadada
@@ -62,7 +62,7 @@ public class Valladares_Steve_Tienda {
             Menu=lea.nextInt();
                 System.out.println("");
         }
-
+ 
       
         if(Menu==1){ //Abir Caja
               if(EstadoDeCaja.equals("Abierto")){
@@ -485,7 +485,7 @@ public class Valladares_Steve_Tienda {
                System.out.println("         **FACTURA**");
                System.out.println("Proveedor: "+Proveedor);
                System.out.println("   Producto: "+ProductoSalida);
-               System.out.println("   Cantidad: "+CantidadProducto);
+               System.out.println("   Cantidad: "+CantidadProducto+" kg");
                System.out.println("   Precio Unitario: Lps. "+PrecioCompra);
                System.out.println("Total: "+Total);
                System.out.println("-----------------------------");
@@ -538,7 +538,7 @@ public class Valladares_Steve_Tienda {
                  ProductoEstrella="Maiz";
              }
              
-             
+             double Ganancia=TotalVentas-TotalCompras;
              
                 System.out.println("-------------------------------------------------------------");
                 System.out.println("                  ***REPORTES***");
@@ -553,12 +553,22 @@ public class Valladares_Steve_Tienda {
                 System.out.println("--------------------------");
                 System.out.println("COMPRAS Y VENTAS EN EL DIA");
                 System.out.println("--------------------------");
+                System.out.println("Numero de Compras Realizadas: "+NumeroDeCompras);
+                System.out.println("Numero de Ventas Realizadas:  "+NumeroDeVentas);
                 
                 System.out.println("");
                 
                 System.out.println("------------------------------");
                 System.out.println("VOLUMEN TOTAL COMPRAS & VENTAS");
                 System.out.println("------------------------------");
+                System.out.println("Dinero Ingresado por Ventas: "+TotalVentas);
+                System.out.println("Dinero Invertido en Compras: "+TotalCompras);
+                if(Ganancia>0){
+                System.out.println("Margen de Ganancia: "+Ganancia);    
+                }else{
+                    System.out.println("Margen de Perdida: "+Ganancia);
+                }
+               
                 
                 System.out.println("");
                 
